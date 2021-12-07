@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KubeStreaming</string>
+    <string name="listTitle">Filmes</string>
+    <string name="contentDescription">temporary description</string>
+    <string name="imgViewPosterDesc">Movie Poster</string>
+    <string name="movieTitle">"Movie title "</string>
+    <string name="movieDescription">Movie description</string>
+    <string name="movieRunningTime">Movie running time</string>
+    <string name="backButton">Back to home screen</string>
 </resources>

@@ -5,29 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-
     tools:context=".MainActivity">
 
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselViewID"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         app:autoPlay="true"
-        app:slideInterval="15000"
         app:fillColor="#C66200EE"
-        app:pageColor="#9C919191"
-        app:strokeColor="#05000000"
-        app:radius="4dp"
-        app:pageTransformer="slide_over"
-        app:pageTransformInterval="750"
         app:indicatorMarginVertical="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:pageColor="#9C919191"
+        app:pageTransformInterval="750"
+        app:pageTransformer="slide_over"
+        app:radius="4dp"
+        app:slideInterval="15000"
+        app:strokeColor="#05000000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/listTitle"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/listViewMoviesID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerPadding="10dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgViewBladeRunner"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/contentDescription"
+                tools:ignore="ImageContrastCheck" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/dieHardImgView"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:contentDescription="@string/contentDescription"
+                tools:ignore="ImageContrastCheck" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/JokerImgView"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:contentDescription="@string/contentDescription"
+                tools:ignore="ImageContrastCheck" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/sieraMadreImgView"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription"
+                tools:ignore="ImageContrastCheck" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/madMaxImgView"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/contentDescription" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll2"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalscroll1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="249dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
