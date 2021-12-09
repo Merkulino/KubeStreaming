@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MovieDescription extends AppCompatActivity {
 
     private ImageView imgViewBack, imgViewPoster;
-    private TextView movieTitle, movieTime, movieDescription;
+    private TextView movieTitle, movieTime, movieDescription, movieDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MovieDescription extends AppCompatActivity {
         imgViewBack =      findViewById(R.id.backButtonID);
         imgViewPoster =    findViewById(R.id.imgViewPosterID);
         movieTitle =       findViewById(R.id.txtMovieTitleID);
+        movieDate =        findViewById(R.id.txtMovieDateID);
         movieTime =        findViewById(R.id.txtMovieTimeID);
         movieDescription = findViewById(R.id.txtMovieDescID);
 
@@ -34,6 +35,7 @@ public class MovieDescription extends AppCompatActivity {
 
         imgViewPoster.setImageResource(movie.getImg());
         movieTitle.setText(movie.getName());
+        movieDate.setText(String.valueOf(movie.getDate()));
         movieTime.setText( String.valueOf(movie.getDuration())+"m");
         movieDescription.setText(movie.getDescription());
     }

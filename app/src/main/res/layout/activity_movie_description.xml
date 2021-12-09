@@ -41,9 +41,23 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
+        android:id="@+id/txtMovieDateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtMovieDate"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
         android:id="@+id/txtMovieTimeID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
         android:layout_marginTop="10dp"
         android:text="@string/movieRunningTime"
         android:textColor="#FFFFFF"
