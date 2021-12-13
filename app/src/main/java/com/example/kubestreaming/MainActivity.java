@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 movieDescriptionActivity(movies.get(position));
             }
         });
-
     }
 
     //Set Carousel imgListner
@@ -89,6 +88,129 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }));
+
+
+        //recycle2
+
+        LinearLayoutManager layoutManager1 = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recyclerView1 = findViewById(R.id.recicleViewID1);
+        recyclerView1.setLayoutManager(layoutManager1);
+        recyclerView1.setAdapter(adapter);
+
+        recyclerView1.addOnItemTouchListener(new RecyclerItemClickListener(
+                getApplicationContext(),
+                recyclerView1,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        Toast.makeText(getApplicationContext(), "Click ;)", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }
+        ));
+
+
+        //recycle3
+
+        LinearLayoutManager layoutManager2 = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recyclerView2 = findViewById(R.id.recicleViewID2);
+        recyclerView2.setLayoutManager(layoutManager2);
+        recyclerView2.setAdapter(adapter);
+
+        recyclerView2.addOnItemTouchListener(new RecyclerItemClickListener(
+                getApplicationContext(),
+                recyclerView2,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        Toast.makeText(getApplicationContext(), "Click ;)", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }
+        ));
+
+
+        //recycle4
+
+        LinearLayoutManager layoutManager3 = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recyclerView3 = findViewById(R.id.recicleViewID3);
+        recyclerView3.setLayoutManager(layoutManager3);
+        recyclerView3.setAdapter(adapter);
+
+        recyclerView3.addOnItemTouchListener(new RecyclerItemClickListener(
+                getApplicationContext(),
+                recyclerView3,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        Toast.makeText(getApplicationContext(), "Click ;)", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }
+        ));
+
+
+        //recycle5
+
+        LinearLayoutManager layoutManager4 = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recyclerView4 = findViewById(R.id.recicleViewID4);
+        recyclerView4.setLayoutManager(layoutManager4);
+        recyclerView4.setAdapter(adapter);
+
+        recyclerView4.addOnItemTouchListener(new RecyclerItemClickListener(
+                getApplicationContext(),
+                recyclerView4,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        Toast.makeText(getApplicationContext(), "Click ;)", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }
+        ));
 
     }
 

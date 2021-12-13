@@ -18,8 +18,6 @@ import java.util.ArrayList;
 
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder> {
 
-    private static  final String TAG = "RecycleVuewAdaoter";
-
         private ArrayList<Movie> img = new ArrayList<>();
         private Context context;
 
@@ -45,8 +43,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "onClick image clicked");
-                //Toast.makeText(context, movie.getName(), Toast.LENGTH_SHORT).show();
             }
         });
 

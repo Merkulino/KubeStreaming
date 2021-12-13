@@ -9,7 +9,7 @@
         android:layout_height="160dp"
         app:cardCornerRadius="4dp"
         app:cardElevation="2dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:layout_centerInParent="true">
 
         <RelativeLayout
