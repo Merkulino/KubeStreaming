@@ -38,7 +38,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         Movie movie = img.get(position);
 
-        holder.imageView.setImageResource(movie.getImg());
+        holder.imageView.setImageResource(movie.getPosterIcon());
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,6 +11,7 @@ public class Movie implements Serializable {
     private int date;
     private int duration;
     private int img;
+    private int posterIcon;
     private String description;
 
     public Movie(String name, int id, int date, int duration, int img, String description) {
@@ -19,6 +20,16 @@ public class Movie implements Serializable {
         this.date = date;
         this.duration = duration;
         this.img = img;
+        this.description = description;
+    }
+
+    public Movie(String name, int id, int date, int duration, int img, int posterIcon, String description) {
+        this.name = name;
+        this.id = id;
+        this.date = date;
+        this.duration = duration;
+        this.img = img;
+        this.posterIcon = posterIcon;
         this.description = description;
     }
 
@@ -60,6 +71,14 @@ public class Movie implements Serializable {
 
     public void setImg(int img) {
         this.img = img;
+    }
+
+    public int getPosterIcon(){
+        return posterIcon;
+    }
+
+    public void setPosterIcon(int posterIcon){
+        this.posterIcon = posterIcon;
     }
 
     public String getDescription() {

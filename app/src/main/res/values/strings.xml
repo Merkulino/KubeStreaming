@@ -8,4 +8,10 @@
     <string name="movieRunningTime">Movie running time</string>
     <string name="backButton">Back to home screen</string>
     <string name="txtMovieDate">Movie Date</string>
+    <string name="movieList1">Filmes relevantes</string>
+    <string name="movielist2">Film-Noir</string>
+    <string name="movieList3">Blacksploitation</string>
+    <string name="movieList4">Western</string>
+    <string name="movieList5">Ultima decada</string>
+    <string name="watchButton">Assistir</string>
 </resources>
