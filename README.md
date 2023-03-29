@@ -8,3 +8,6 @@ Esse projeto Front End mobile desenvolvido com Java utilizando a IDE Android Stu
 
 O objetivo desse projeto foi <b>praticar meus conhecimentos de Front End</b> utilizando <b>Constraint Layout na IDE Android Studio</b>. 
 Além dessa pratica de design, também apliquei meus conhecimentos de <b>POO utilizando Java</b>.
+
+### Layout do app
+![Preview](https://media1.giphy.com/media/xmYpzfKzvwllCCX0Kh/giphy.gif)
